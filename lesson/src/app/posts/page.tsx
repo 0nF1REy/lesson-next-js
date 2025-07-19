@@ -1,6 +1,7 @@
 import { ButtonComponent } from "@/components/button/button";
+import Link from "next/link";
 
-interface PostProps {
+export interface PostProps {
   id: number;
   title: string;
   body: string;
@@ -60,12 +61,12 @@ export default async function PaginaPosts() {
               </p>
               <div className="flex justify-between items-center text-sm text-gray-500">
                 <span>Usuário: {post.userId}</span>
-                <a
-                  href="#"
+                <Link
+                  href={`/posts/${post.id}`}
                   className="text-[#4a90e2] hover:text-[#2c6fb2] font-medium"
                 >
-                  Ler mais →
-                </a>
+                  Acessar detalhes →
+                </Link>
               </div>
             </article>
           ))}

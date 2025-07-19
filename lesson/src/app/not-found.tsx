@@ -14,7 +14,7 @@ export default function NotFoundPage() {
       </p>
       <Link
         href="/"
-        className="inline-block bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-700 transition"
+        className="inline-block bg-[#4a90e2] text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-700 transition"
       >
         Voltar para a home
       </Link>
