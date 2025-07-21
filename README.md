@@ -9,12 +9,11 @@ Este é um projeto de aprendizado Next.js que demonstra conceitos fundamentais d
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Instalação e Execução](#instalação-e-execução)
 - [Funcionalidades](#funcionalidades)
-- [Rotas Disponíveis](#rotas-disponíveis)
+- [Rotas Disponíveis](#rotas-disponiveis)
 - [Componentes](#componentes)
-- [API Routes](#api-routes)
 - [Middleware](#middleware)
 
-## 🎯 Sobre o Projeto
+## 🎯 Sobre o Projeto <a name="sobre-o-projeto"></a>
 
 Este projeto foi desenvolvido para ensinar e demonstrar os principais conceitos do Next.js 15, incluindo:
 
@@ -27,7 +26,7 @@ Este projeto foi desenvolvido para ensinar e demonstrar os principais conceitos 
 - API Routes
 - Tratamento de erros e páginas 404
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas <a name="tecnologias-utilizadas"></a>
 
 - **Next.js 15.4.1** - Framework React para produção
 - **React 19.1.0** - Biblioteca para interfaces de usuário
@@ -35,7 +34,7 @@ Este projeto foi desenvolvido para ensinar e demonstrar os principais conceitos 
 - **Tailwind CSS 4** - Framework CSS utilitário
 - **PostCSS** - Ferramenta para transformação CSS
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto <a name="estrutura-do-projeto"></a>
 
 ```
 lesson/
@@ -61,7 +60,7 @@ lesson/
 └── postcss.config.mjs         # Configuração PostCSS
 ```
 
-## 💻 Instalação e Execução
+## 💻 Instalação e Execução <a name="instalação-e-execução"></a>
 
 ### Pré-requisitos
 
@@ -71,24 +70,29 @@ lesson/
 ### Instalação
 
 1. Clone o repositório:
-```bash
-git clone <url-do-repositorio>
-cd lesson-next-js
-```
+
+   ```bash
+   git clone https://github.com/0nF1REy/lesson-next-js.git
+   cd lesson-next-js
+   ```
 
 2. Navegue até a pasta do projeto:
-```bash
-cd lesson
-```
+
+   ```bash
+   cd lesson
+   ```
 
 3. Instale as dependências:
-```bash
-npm install
-# ou
-yarn install
-# ou
-pnpm install
-```
+
+   ```bash
+   npm install
+
+   # ou
+   yarn install
+
+   # ou
+   pnpm install
+   ```
 
 ### Execução
 
@@ -96,35 +100,26 @@ Para executar o projeto em modo de desenvolvimento:
 
 ```bash
 npm run dev
+
 # ou
 yarn dev
+
 # ou
 pnpm dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-### Outros Scripts
-
-```bash
-# Build para produção
-npm run build
-
-# Executar em produção
-npm run start
-
-# Verificar código com ESLint
-npm run lint
-```
-
-## ✨ Funcionalidades
+## ✨ Funcionalidades <a name="funcionalidades"></a>
 
 ### 🏠 Página Inicial
+
 - Geração de números aleatórios
 - Revalidação automática a cada 60 segundos
 - Meta tags otimizadas para SEO
 
 ### 📝 Sistema de Posts
+
 - Lista de posts fetchados da API DummyJSON
 - Página individual para cada post
 - Sistema de loading com Suspense
@@ -132,27 +127,29 @@ npm run lint
 - Busca de posts por usuário
 
 ### 🔐 Dashboard Protegido
+
 - Middleware de autenticação
 - Redirecionamento automático para não autenticados
 
 ### 🎨 Componentes Interativos
+
 - Botão com estado local (useState)
-- Header responsivo com navegação
 
-## 🛣️ Rotas Disponíveis
+## 🛣️ Rotas Disponíveis <a name="rotas-disponiveis"></a>
 
-| Rota | Descrição | Tipo |
-|------|-----------|------|
-| `/` | Página inicial | Static |
-| `/posts` | Lista de posts | ISR (60s) |
-| `/posts/[id]` | Post individual | Dynamic |
-| `/dashboard` | Dashboard protegido | Protected |
-| `/contatos` | Página de contatos | Static |
-| `/api/info` | API com dados de perfil | API Route |
+| Rota          | Descrição               | Tipo      |
+| ------------- | ----------------------- | --------- |
+| `/`           | Página inicial          | Static    |
+| `/posts`      | Lista de posts          | ISR (60s) |
+| `/posts/[id]` | Post individual         | Dynamic   |
+| `/dashboard`  | Dashboard protegido     | Protected |
+| `/contatos`   | Página de contatos      | Static    |
+| `/api/info`   | API com dados de perfil | API Route |
 
-## 🧩 Componentes
+## 🧩 Componentes <a name="componentes"></a>
 
 ### HeaderComponent
+
 Localizado em [`src/components/header/header.tsx`](lesson/src/components/header/header.tsx)
 
 - Navegação responsiva
@@ -160,38 +157,20 @@ Localizado em [`src/components/header/header.tsx`](lesson/src/components/header/
 - Design com Tailwind CSS
 
 ### ButtonComponent
+
 Localizado em [`src/components/button/button.tsx`](lesson/src/components/button/button.tsx)
 
 - Componente client-side
 - Gerenciamento de estado com useState
 - Funcionalidade de alteração de nome
 
-## 🔌 API Routes
-
-### GET /api/info
-Localizada em [`src/app/api/info/route.ts`](lesson/src/app/api/info/route.ts)
-
-Retorna informações detalhadas de perfil incluindo:
-- Dados pessoais
-- Educação e certificações
-- Links para redes sociais
-- Interesses e habilidades
-
-## 🛡️ Middleware
+## 🛡️ Middleware <a name="middleware"></a>
 
 O middleware em [`src/middleware.ts`](lesson/src/middleware.ts) implementa:
 
 - Proteção de rotas do dashboard
 - Redirecionamento para usuários não autenticados
 - Verificação de autenticação (atualmente configurado como `false` para demonstração)
-
-## 📱 Design Responsivo
-
-O projeto utiliza Tailwind CSS para criar um design totalmente responsivo:
-
-- Layout flexível que se adapta a diferentes tamanhos de tela
-- Componentes otimizados para mobile e desktop
-- Sistema de grid responsivo para lista de posts
 
 ## 🔄 Estratégias de Cache
 
