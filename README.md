@@ -2,16 +2,19 @@
 
 Este é um projeto de aprendizado Next.js que demonstra conceitos fundamentais do framework, incluindo roteamento, componentes, middleware, Server Actions e muito mais.
 
-## 📋 Índice
+## 🧭 Guia de Navegação (Índice)
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação e Execução](#instalação-e-execução)
-- [Funcionalidades](#funcionalidades)
-- [Rotas Disponíveis](#rotas-disponiveis)
-- [Componentes](#componentes)
-- [Middleware](#middleware)
+- **[🎯 Sobre o Projeto](#sobre-o-projeto)**
+- **[📸 Ilustração](#ilustracao)**
+- **[🚀 Tecnologias Utilizadas](#tecnologias-utilizadas)**
+- **[📁 Estrutura do Projeto](#estrutura-do-projeto)**
+- **[💻 Instalação e Execução](#instalacao-e-execucao)**
+- **[✨ Funcionalidades](#funcionalidades)**
+- **[🛣️ Rotas Disponíveis](#rotas-disponiveis)**
+- **[🧩 Componentes](#componentes)**
+- **[🛡️ Middleware](#middleware)**
+- **[🔄 Estratégias de Cache](#estrategias-de-cache)**
+- **[📄 Licença](#licenca)**
 
 ## 🎯 Sobre o Projeto <a name="sobre-o-projeto"></a>
 
@@ -25,6 +28,20 @@ Este projeto foi desenvolvido para ensinar e demonstrar os principais conceitos 
 - Incremental Static Regeneration (ISR)
 - API Routes
 - Tratamento de erros e páginas 404
+
+## 📸 Ilustração <a name="ilustracao"></a>
+
+- ### _HOME:_
+
+![Print da página inicial](./readme_images/01-home.png)
+
+- ### _POSTS:_
+
+![Print da página de posts](./readme_images/02-posts.png)
+
+- ### _POST:_
+
+![Print da página de post](./readme_images/03-post.png)
 
 ## 🚀 Tecnologias Utilizadas <a name="tecnologias-utilizadas"></a>
 
@@ -60,7 +77,7 @@ lesson/
 └── postcss.config.mjs         # Configuração PostCSS
 ```
 
-## 💻 Instalação e Execução <a name="instalação-e-execução"></a>
+## 💻 Instalação e Execução <a name="instalacao-e-execucao"></a>
 
 ### Pré-requisitos
 
@@ -172,13 +189,13 @@ O middleware em [`src/middleware.ts`](lesson/src/middleware.ts) implementa:
 - Redirecionamento para usuários não autenticados
 - Verificação de autenticação (atualmente configurado como `false` para demonstração)
 
-## 🔄 Estratégias de Cache
+## 🔄 Estratégias de Cache <a name="estrategias-de-cache"></a>
 
 - **ISR**: Posts revalidados a cada 60 segundos
 - **Force Cache**: Cache forçado para dados de posts
 - **Revalidate**: Configuração de revalidação personalizada
 
-## 📄 Licença
+## 📄 Licença <a name="licenca"></a>
 
 Este projeto é destinado para fins educacionais e de aprendizado.
 
